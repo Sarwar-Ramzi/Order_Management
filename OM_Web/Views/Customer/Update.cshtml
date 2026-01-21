@@ -1,0 +1,120 @@
+﻿@model Customer
+
+<form method="post">
+    <input asp-for="Customer_ID" hidden />
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary fw-bold">Edit Customer</h2>
+            <hr />
+        </div>
+        <div asp-validation-summary="All" class="text-bg-danger"></div>
+        <div class="mb-2 row p-1">
+            <div class="mb-3 col-2">
+                <label asp-for="Company" class="p-2 fw-bold"></label>
+            </div>
+            <div class="mb-3 col-9 p-0">
+                <input asp-for="Company" class="form-control border p-2 shadow" />
+            </div>
+            <span asp-validation-for="Company" class="text-danger"></span>
+        </div>
+
+        <div class="mb-2 row p-1">
+            <div class="mb-3 col-2">
+                <label asp-for="Last_Name" class="p-2 fw-bold"></label>
+            </div>
+            <div class="mb-3 col-9 p-0">
+                <input asp-for="Last_Name" class="form-control border p-2 shadow" />
+            </div>
+            <span asp-validation-for="Last_Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-2 row p-1">
+            <div class="mb-3 col-2">
+                <label asp-for="First_Name" class="p-2 fw-bold"></label>
+            </div>
+            <div class="mb-3 col-9 p-0">
+                <input asp-for="First_Name" class="form-control border p-2 shadow" />
+            </div>
+            <span asp-validation-for="First_Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-2 row p-1">
+            <div class="mb-3 col-2">
+                <label asp-for="E_Mail_Address" class="p-2 fw-bold"></label>
+            </div>
+            <div class="mb-3 col-9 p-0">
+                <input asp-for="E_Mail_Address" class="form-control border p-2 shadow" />
+            </div>
+            <span asp-validation-for="E_Mail_Address" class="text-danger"></span>
+        </div>
+
+        <div class="mb-2 row p-1">
+            <div class="mb-3 col-2">
+                <label asp-for="Job_Title" class="p-2 fw-bold"></label>
+            </div>
+            <div class="mb-3 col-9 p-0">
+                <input asp-for="Job_Title" class="form-control border p-2 shadow" />
+            </div>
+            <span asp-validation-for="Job_Title" class="text-danger"></span>
+        </div>
+
+        <div class="mb-2 row p-1">
+            <div class="mb-3 col-2">
+                <label asp-for="Business_Phone" class="p-2 fw-bold"></label>
+            </div>
+            <div class="mb-3 col-9 p-0">
+                <input asp-for="Business_Phone" class="form-control border p-2 shadow" />
+            </div>
+            <span asp-validation-for="Business_Phone" class="text-danger"></span>
+        </div>
+
+        <div class="mb-2 row p-1">
+            <div class="mb-3 col-2">
+                <label asp-for="Fax_Number" class="p-2 fw-bold"></label>
+            </div>
+            <div class="mb-3 col-9 p-0">
+                <input asp-for="Fax_Number" class="form-control border p-2 shadow" />
+            </div>
+            <span asp-validation-for="Fax_Number" class="text-danger"></span>
+        </div>
+
+        <div class="mb-2 row p-1">
+            <div class="mb-3 col-2">
+                <label asp-for="Address" class="p-2 fw-bold"></label>
+            </div>
+            <div class="mb-3 col-9 p-0">
+                <input asp-for="Address" class="form-control border p-2 shadow" />
+            </div>
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+
+        <div class="mb-2 row p-1">
+            <div class="mb-3 col-2">
+                <label asp-for="Notes" class="p-2 fw-bold"></label>
+            </div>
+            <div class="mb-3 col-9 p-0">
+                <input asp-for="Notes" class="form-control border p-2 shadow" />
+            </div>
+            <span asp-validation-for="Notes" class="text-danger"></span>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <button type="submit" class="btn btn-primary form-control">
+                    <i class="bi bi-floppy"></i> Update
+                </button>
+            </div>
+            <div class="col-6 col-md-3">
+                <a asp-controller="Customer" asp-action="Index" class="btn btn-outline-secondary border form-control">
+                    Back to List
+                </a>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts
+{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
