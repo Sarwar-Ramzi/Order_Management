@@ -22,6 +22,10 @@ namespace OM_Web.Controllers
         {
             return View();
         }
+        public IActionResult FAQ()
+        {
+            return View();
+        }
 
         public IActionResult AboutUs() 
         {
