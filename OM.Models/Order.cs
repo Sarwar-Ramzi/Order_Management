@@ -24,10 +24,10 @@ namespace OM.Models
         public DateTime? Order_Date { get; set; }
 
         [DisplayName("Shipping Fee")]
-        public decimal? Shipping_Fee { get; set; }
+        public double? Shipping_Fee { get; set; }
 
         [DisplayName("Taxes")]
-        public decimal? Taxes { get; set; }
+        public double? Taxes { get; set; }
 
         public string? Notes { get; set; }
     }

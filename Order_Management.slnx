@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="OM.DataAccess/OM.DataAccess.csproj" Id="fea87fff-8c47-445b-83a2-c978d77603d3" />
   <Project Path="OM.Models/OM.Models.csproj" Id="bdf625e8-2eec-47ba-b9e0-640d47788d69" />
   <Project Path="OM.Utility/OM.Utility.csproj" Id="fab464e8-021f-41d0-afc2-2c7314dfe649" />
   <Project Path="OM_Web/OM_Web.csproj" />

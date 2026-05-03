@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace OM_Web.Migrations
+namespace OM.DataAccess.Migrations
 {
     /// <inheritdoc />
     public partial class InitialDb : Migration
